@@ -25,3 +25,13 @@ func TestNewSpecialArray(t *testing.T) {
 	x := chapter_three_composite_types.NewSpecialArray()
 	assert.Equal(t, expectedValues, x)
 }
+
+func TestLoadingASlice(t *testing.T) {
+	x := chapter_three_composite_types.LoadingASlice()
+	assert.NotNil(t, x)
+}
+
+func TestMakingSlice(t *testing.T) {
+	x := chapter_three_composite_types.MakingSlice()
+	assert.NotNil(t, x)
+}

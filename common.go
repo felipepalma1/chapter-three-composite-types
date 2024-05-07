@@ -21,3 +21,24 @@ func SimpleInitializedArray() [3]int {
 func NewSpecialArray() [12]int {
 	return operations.NewSparseArray()
 }
+
+func LoadingASlice() []int {
+	var x []int
+	x = append(x, 10)
+	x = append(x, 10)
+	x = append(x, 10)
+	x = append(x, 10)
+	x = append(x, 10, 20, 30, 40)
+
+	return x
+}
+
+func MakingSlice() []int {
+	x := make([]int, 1, 20)
+
+	for range x {
+		x = append(x, 100)
+	}
+
+	return x
+}
